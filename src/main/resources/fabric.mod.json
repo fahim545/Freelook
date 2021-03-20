@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "freelook",
+  "version": "${version}",
+  "name": "Freelook",
+  "description": "Allows the user to view their surroundings in the third person without moving the player rotation or changing the current movement/action.",
+  "authors": ["frykher"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/freelook/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "studio.fractures.mcmods.freelook.Freelook"
+    ]
+  },
+  "mixins": [
+    "freelook.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.2",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
