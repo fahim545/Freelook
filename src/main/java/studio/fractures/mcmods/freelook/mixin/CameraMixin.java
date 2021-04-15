@@ -5,7 +5,6 @@ import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.options.Perspective;
 import net.minecraft.client.render.Camera;
 import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import org.spongepowered.asm.mixin.Mixin;
