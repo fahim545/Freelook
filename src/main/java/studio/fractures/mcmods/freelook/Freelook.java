@@ -3,9 +3,8 @@ package studio.fractures.mcmods.freelook;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.options.KeyBinding;
-import net.minecraft.client.options.Perspective;
-import net.minecraft.client.render.Camera;
+import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.option.Perspective;
 import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
 import studio.fractures.mcmods.freelook.models.EntityWithFreecam;
@@ -25,8 +24,8 @@ public class Freelook implements ClientModInitializer {
                 if (pressed) {
                     if (isFreecam) return;
                     isFreecam = true;
-                    entityWithFreecam.setCameraPitch(client.player.pitch);
-                    entityWithFreecam.setCameraYaw(client.player.yaw);
+                    entityWithFreecam.setCameraPitch(client.player.getPitch());
+                    entityWithFreecam.setCameraYaw(client.player.getYaw());
                 } else {
                     isFreecam = false;
                     client.options.setPerspective(Perspective.FIRST_PERSON);
