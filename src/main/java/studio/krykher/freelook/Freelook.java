@@ -1,4 +1,4 @@
-package studio.fractures.mcmods.freelook;
+package studio.krykher.freelook;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
@@ -7,12 +7,12 @@ import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.option.Perspective;
 import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
-import studio.fractures.mcmods.freelook.models.EntityWithFreecam;
+import studio.krykher.freelook.models.EntityWithFreecam;
 
 public class Freelook implements ClientModInitializer {
     public static boolean isFreecam = false;
 
-    public static final KeyBinding FreecamKeyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.freelook.freecam", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_LEFT_ALT, "category.misc") {
+    public static final KeyBinding FreecamKeyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.freelook.freecam", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_LEFT_ALT, "key.categories.misc") {
         @Override
         public void setPressed(boolean pressed) {
             super.setPressed(pressed);

@@ -1,4 +1,4 @@
-package studio.fractures.mcmods.freelook.models;
+package studio.krykher.freelook.models;
 
 public interface EntityWithFreecam {
     float getCameraPitch();

@@ -1,8 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "studio.fractures.mcmods.freelook.mixin",
-  "compatibilityLevel": "JAVA_16",
+  "package": "studio.krykher.freelook.mixin",
+  "compatibilityLevel": "JAVA_17",
   "mixins": [
     "CameraMixin",
     "EntityMixin"

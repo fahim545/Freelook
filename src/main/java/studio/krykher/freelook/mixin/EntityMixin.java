@@ -1,4 +1,4 @@
-package studio.fractures.mcmods.freelook.mixin;
+package studio.krykher.freelook.mixin;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
@@ -7,8 +7,8 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import studio.fractures.mcmods.freelook.Freelook;
-import studio.fractures.mcmods.freelook.models.EntityWithFreecam;
+import studio.krykher.freelook.Freelook;
+import studio.krykher.freelook.models.EntityWithFreecam;
 
 @Mixin(Entity.class)
 public abstract class EntityMixin implements EntityWithFreecam {
